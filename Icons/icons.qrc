@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Main">
+    <file>icons8-dollar-bills-94.png</file>
+  </qresource>
+  <qresource prefix="Buttons">
+    <file>icons8-cancel-94.png</file>
+    <file>icons8-tick-mark-48.png</file>
+  </qresource>
+</RCC>
