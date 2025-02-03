@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_main</class>
+ <widget class="QMainWindow" name="w_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sample Application</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Icons/icons.qrc">
+    <normaloff>:/Main/icons8-dollar-bills-94.png</normaloff>:/Main/icons8-dollar-bills-94.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="act_quit"/>
+   </widget>
+   <widget class="QMenu" name="menuPerson">
+    <property name="title">
+     <string>Person</string>
+    </property>
+    <addaction name="act_add_person"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPerson"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="act_quit">
+   <property name="icon">
+    <iconset resource="../../Icons/icons.qrc">
+     <normaloff>:/Buttons/icons8-cancel-94.png</normaloff>:/Buttons/icons8-cancel-94.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="act_add_person">
+   <property name="text">
+    <string>Add Person</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../Icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
