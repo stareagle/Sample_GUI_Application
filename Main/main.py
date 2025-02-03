@@ -10,6 +10,7 @@ class MainWindow(qtw.QMainWindow, Ui_w_main):
         super().__init__()
         self.setupUi(self)
 
+        self.act_quit.triggered.connect(self.close)
 
 if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)

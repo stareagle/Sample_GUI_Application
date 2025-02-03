@@ -35,6 +35,8 @@ class Ui_w_main(object):
         self.act_quit.setIcon(icon1)
         self.act_add_person = QAction(w_main)
         self.act_add_person.setObjectName(u"act_add_person")
+        self.act_open = QAction(w_main)
+        self.act_open.setObjectName(u"act_open")
         self.centralwidget = QWidget(w_main)
         self.centralwidget.setObjectName(u"centralwidget")
         w_main.setCentralWidget(self.centralwidget)
@@ -52,6 +54,7 @@ class Ui_w_main(object):
 
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuPerson.menuAction())
+        self.menuFile.addAction(self.act_open)
         self.menuFile.addAction(self.act_quit)
         self.menuPerson.addAction(self.act_add_person)
 
@@ -64,6 +67,7 @@ class Ui_w_main(object):
         w_main.setWindowTitle(QCoreApplication.translate("w_main", u"Sample Application", None))
         self.act_quit.setText(QCoreApplication.translate("w_main", u"Quit", None))
         self.act_add_person.setText(QCoreApplication.translate("w_main", u"Add Person", None))
+        self.act_open.setText(QCoreApplication.translate("w_main", u"Open", None))
         self.menuFile.setTitle(QCoreApplication.translate("w_main", u"File", None))
         self.menuPerson.setTitle(QCoreApplication.translate("w_main", u"Person", None))
     # retranslateUi

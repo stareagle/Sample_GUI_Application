@@ -31,6 +31,7 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="act_open"/>
     <addaction name="act_quit"/>
    </widget>
    <widget class="QMenu" name="menuPerson">
@@ -55,6 +56,11 @@
   <action name="act_add_person">
    <property name="text">
     <string>Add Person</string>
+   </property>
+  </action>
+  <action name="act_open">
+   <property name="text">
+    <string>Open</string>
    </property>
   </action>
  </widget>
